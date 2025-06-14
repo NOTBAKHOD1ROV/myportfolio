@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asilbek Bakhodirov – Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #00ffcc;
+    }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.2rem; font-weight: normal; color: #ccc; }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #00ffcc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: #1e1e2f;
+      padding: 1.5rem;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 255, 204, 0.2);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 255, 204, 0.4);
+    }
+    .card h3 {
+      color: #00ffcc;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      background: #00ffcc;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .btn:hover {
+      background: #00ddb3;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      background: rgba(0,0,0,0.2);
+      border-top: 1px solid #00ffcc;
+    }
+    @media(max-width: 600px){
+      h1 { font-size: 2rem; }
+      .section-title { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Asilbek Bakhodirov</h1>
+    <h2>Telegram Bot & Web Developer</h2>
+  </header>
+
+  <section>
+    <div class="section-title">🧠 About Me</div>
+    <p>
+      I am a dedicated and creative developer from Uzbekistan with strong experience in building Telegram bots, responsive websites, and JSON-based applications. I have successfully completed multiple freelance projects and continuously aim to deliver high-quality and user-friendly products.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-title">🚀 Projects</div>
+    <div class="projects">
+      <div class="card">
+        <h3>DoctorFinder Bot</h3>
+        <p>Multi-language Telegram bot that allows users to find doctors based on region and specialization. Built with Python and JSON.</p>
+      </div>
+      <div class="card">
+        <h3>MedReminder App</h3>
+        <p>A smart reminder app for taking medicine on time, includes images, notification sounds, and PWA features.</p>
+      </div>
+      <div class="card">
+        <h3>WorldCars Bot</h3>
+        <p>Interactive Telegram bot that shows luxury, off-road, sports, and comfort cars with images and location-based dealership suggestions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="section-title">📬 Contact Me</div>
+    <a href="https://t.me/YourTelegramUsername" target="_blank" class="btn">Telegram</a>
+    <a href="mailto:youremail@example.com" class="btn">Email</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Asilbek Bakhodirov. All rights reserved.
+  </footer>
+</body>
+</html>
